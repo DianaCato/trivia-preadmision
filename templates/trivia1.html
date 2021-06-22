@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"> <!--Codificación de caracteres/ñ -->
+	<meta name="viewport" content="width=device-width"> <!--Controlar la composición en los navegadores móviles  -->
+	<title>Estilos de aprendizaje</title> <!-- Titulo de la pestaña -->
+	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> <!-- Fuente de googleFonts -->
+	<link rel="icon" href="https://img.icons8.com/doodle/48/000000/learning.png"> <!-- Icono de la pestaña -->
+	<link href="../style.css" rel="stylesheet" type="text/css" /> <!-- Hoja de estilos -->
+</head>
+<body>
+	<header class="header">
+		<div class="logo"> <!-- Div para logo y titulo de página. -->
+			<img src="https://img.icons8.com/doodle/48/000000/learning.png" alt="logo aprendizaje">
+            <h1>Estilos de aprendizaje</h1>
+		</div>
+			<nav class="navegacion"> <!-- Navegador para menú de header. -->
+				<ul>
+                    <li>
+                        <a href="../index.html"><img src="https://img.icons8.com/fluent-systems-filled/30/000000/home.png" alt="Página de inicio"></a> <!--Enlace por medio de imágen  -->
+					</li>
+				</ul>
+			</nav>
+	</header>
+
+<!-- Contenido -->
+    <h1 class="tittleCheck">Descubre tu estilo de aprendizaje</h1>
+
+    <div class="containerTrivia">
+	<p> Selecciona una respuesta para cada una de las siguientes preguntas:</p>
+		<div class="containerTrivia1">
+			<figure class="containerImagesTrivia">
+				<img src="https://img.icons8.com/dusk/100/000000/class.png" alt="Clase"/>
+				<img src="https://img.icons8.com/dusk/100/000000/system-information.png" alt="Información"/>
+				<img src="https://img.icons8.com/dusk/100/000000/garageband.png" alt="Banda"/>
+        <img src="https://img.icons8.com/dusk/100/000000/saving-book.png" alt="Aprender"/>
+				<img src="https://img.icons8.com/dusk/100/000000/crowd.png" alt="Personas"/>
+			</figure>
+			<form class="formTrivia1" method="post" name="formulario">
+		<div>
+			<ol>
+				<li> En las clases...</li> 
+        <input type="radio" name="p1" value="0"> Estoy inquieto <br>
+        <input type="radio" name="p1" value="1"> Estoy atenta escuchando al profesor <br>
+        <input type="radio" name="p1" value="2"> Me enfoco en la pizarra o material<br>
+
+      <li> Para obtener mayor información usualmente..</li> 
+      <input type="radio" name="p2" value="1"> Le pregunto a mis profesores o compañeros <br>
+      <input type="radio" name="p2" value="2"> Prefiero buscar en libros o la web <br>
+       <input type="radio" name="p2" value="0"> No suelo tener dudas, estoy muy atenta a las explicaciones <br>
+    
+      <li> Si estuvieras en una banda tu... </li>
+       <input type="radio" name="p3" value="2"> Serias el cantante principal <br>
+       <input type="radio" name="p3" value="0"> Serias director o manager <br>
+       <input type="radio" name="p3" value="1"> Serias el guitarrista <br>
+   
+      <li> Con cuál enunciado te identifícas más </li>
+      <input type="radio" name="p4" value="1"> Solo aprendes lo que te muestran en clase. <br>
+      <input type="radio" name="p4" value="2"> Te gusta aprender contenido extra, saber más sobre cada temática <br>
+       <input type="radio" name="p4" value="0"> Aprendes más si compites contra tus compañeros.<br>
+    
+      <li> Cuando quieres aprender algo nuevo tu... </li>
+       <input type="radio" name="p5" value="2"> Buscas y lees toda la información disponible <br>
+       <input type="radio" name="p5" value="0"> Lo haces por ensayo y error. <br>
+       <input type="radio" name="p5" value="1"> Escuchas a personas expertas en el tema.
+    </ol>
+    </div>
+    <div>
+        <div id="error"></div>
+    </div>
+    <div>
+        <p><input type="button" value="Enviar" class="button" id="btnTrivia1"></p>
+    </div>
+</form>
+<div id="resultado"></div>
+		</div>
+		<a type="button" class="button" href="categoria.html" id="btnRegresar">Regresar</a>
+    
+	</div>
+<!-- Contenido -->
+    <script src="../scripts/trivia1.js"></script> <!-- Archivo de js -->
+</body>
+</html>

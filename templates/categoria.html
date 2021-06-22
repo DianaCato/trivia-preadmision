@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- Tipo de archivo -->
+<html>
+
+<head>
+	<meta charset="utf-8"> <!--Codificación de caracteres/ñ -->
+	<meta name="viewport" content="width=device-width"> <!--Controlar la composición en los navegadores móviles  -->
+	<title>Estilos de aprendizaje</title> <!-- Titulo de la pestaña -->
+	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> <!-- Fuente de googleFonts -->
+	<link rel="icon" href="https://img.icons8.com/doodle/48/000000/learning.png"> <!-- Icono de la pestaña -->
+	<link href="../style.css" rel="stylesheet" type="text/css" /> <!-- Hoja de estilos -->
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo"> <!-- Div para logo y titulo de página. -->
+			<img src="https://img.icons8.com/doodle/48/000000/learning.png" alt="logo aprendizaje">
+            <h1>Estilos de aprendizaje</h1>
+		</div>
+			<nav class="navegacion"> <!-- Navegador para menú de header. -->
+				<ul>
+                    <li>
+                        <a href="../index.html"><img src="https://img.icons8.com/fluent-systems-filled/30/000000/home.png" alt="Página de inicio"></a> <!--Enlace por medio de imágen  -->
+					</li>
+				</ul>
+			</nav>
+	</header>
+
+	<h1 id="greeting"></h1> <!-- id=saludo para el script.js -->
+
+	<div class="container">
+		<figure>
+			<img src="/icons/estilos.png" width="380px" alt="Tipos de aprendizaje">
+		</figure>
+		<main class="form">
+			<h2 class="tittle">Elige por favor una opción</h2>
+				<form action="categoria.html" >
+					<a href="trivia1.html" class="button" id="categoryButton_1" >Descubrir</a>
+					<a href="trivia2.html" class="button" id="categoryButton_2">Check</a>
+                </form>
+                <article>
+                    <h2 class="remember"> Recuerda: </h2>
+                        <ul class="article">
+                            <li> <p>Esta trivia te permitirá identificar los mecanismos que facilitan tu aprendizaje.</p> </li>
+                            <li> <p> No hay respuestas correctas o erróneas. Es importante que seas sincera con tus respuestas. </p> </li>
+                            <li> <p> Por favor contesta todas las preguntas, eligiendo la opción con la que te sientas más identificada. </p> </li>
+                        </ul>
+                </article>
+		</main>
+	</div>
+
+	<footer class="footer">
+		<h1>Todos los derechos reservados © 2020</h1>
+			<nav class="navigationFooter"> <!-- navegación del footer/redes sociales -->
+				<ul>
+                    <li>
+						<a href="#"><img src="https://img.icons8.com/dusk/64/000000/facebook-new.png" width="50px" alt="Facebook"></a> <!-- Enlaces -->
+						<a href="#"><img src="https://img.icons8.com/dusk/64/000000/instagram-new.png" width="50px" alt="Instagram"/></a>
+						<a href="#"><img src="https://img.icons8.com/dusk/64/000000/youtube--v2.png" width="50px" alt="Youtube" /></a>
+					</li>
+				</ul>
+			</nav>
+	</footer>
+
+    <script src="../scripts/script.js"></script> <!-- Archivo de js -->
+
+</body>
+
+</html>

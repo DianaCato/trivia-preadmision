@@ -1,0 +1,193 @@
+<!DOCTYPE html> <!-- Tipo de archivo -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--Codificación de caracteres/ñ -->
+    <meta name="viewport" content="width=device-width">
+    <!--Controlar la composición en los navegadores móviles  -->
+    <title>Estilos de aprendizaje</title> <!-- Titulo de la pestaña -->
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <!-- Fuente de googleFonts -->
+    <link rel="icon" href="https://img.icons8.com/doodle/48/000000/learning.png"> <!-- Icono de la pestaña -->
+    <link href="../style.css" rel="stylesheet" type="text/css" /> <!-- Hoja de estilos -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <!-- Div para logo y titulo de página. -->
+            <img src="https://img.icons8.com/doodle/48/000000/learning.png" alt="logo aprendizaje">
+            <h1>Estilos de aprendizaje</h1>
+        </div>
+        <nav class="navegacion">
+            <!-- Navegador para menú de header. -->
+            <ul>
+                <li>
+                    <a href="../index.html"><img src="https://img.icons8.com/fluent-systems-filled/30/000000/home.png"
+                            alt="Página de inicio"></a>
+                    <!--Enlace por medio de imágen  -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <div class="containerTrivia2">
+        <h1 class="tittleCheck">Check estilo de aprendizaje</h1>
+        <div class="container">
+            <div class="containerTrivia2">
+                <p> Selecciona solo la opción con la que te sientas identificada (VISUAL, AUDITIVO, KINESTÉSICO) y elige
+                    entre
+                    verdadero o falso según corresponda en cada enunciado</p>
+                <div class="containerTrivia2">
+                  
+                    <details class="attribute"   id="visualCheck"> <!--  Esconde el formulario del estilo visual-->
+                        <summary>
+                            <h4>VISUAL</h4>
+                        </summary> <!--- Remplaza el texto predeterminado por "visual"-->
+                        <form>
+                            <label>Prefiero pasar el tiempo leyendo</label><br>
+                            <input type="radio" name="v1" value="true"> Verdadero
+                            <input type="radio" name="v1" value="false"> Falso
+                            <br>
+                            <label>Tomo notas empleando diferentes colores</label><br>
+                            <input type="radio" name="v2" value="true"> Verdadero
+                            <input type="radio" name="v2" value="false"> Falso
+                            <br>
+                            <label>Nunca recuerdo donde dejo las cosas </label><br>
+                            <input type="radio" name="v3" value="true"> Verdadero
+                            <input type="radio" name="v3" value="false"> Falso
+                            <br>
+                            <label>Admiro especialmente a los actores</label><br>
+                            <input type="radio" name="v4" value="true"> Verdadero
+                            <input type="radio" name="v4" value="false"> Falso
+                            <br>
+                            <label>Cuando voy de viaje me gusta tomar muchas fotos</label><br>
+                            <input type="radio" name="v5" value="true"> Verdadero
+                            <input type="radio" name="v5" value="false"> Falso
+                            <br>
+                            <label>Para encontrar una dirección empleo el GPS</label><br>
+                            <input type="radio" name="v6" value="true"> Verdadero
+                            <input type="radio" name="v6" value="false"> Falso
+                            <br>
+                            <label>Me es dificil visualizar las cosas en mi cabeza</label><br>
+                            <input type="radio" name="v7" value="true"> Verdadero
+                            <input type="radio" name="v7" value="false"> Falso
+                            <br>
+
+                            <input type="submit" value="Enviar" class="button" onclick="chVisual()" id="btnVisual">
+                        </form>
+                    </details>
+                    <br>
+                    <details class="attribute"> <!--esconde el formulario del estilo auditivo-->
+                        <summary>
+                            <h4>AUDITIVO</h4>
+                        </summary>  <!--- Remplaza el texto predeterminado por "auditivo-->
+
+                        <form>
+                            <label>Prefiero pasar el tiempo escuchando música</label><br>
+                            <input type="radio" name="v1" value="true"> Verdadero
+                            <input type="radio" name="v1" value="false"> Falso
+                            <br>
+                            <label>Al leer, oigo las palabras en mi cabeza o las leo en voz alta</label><br>
+                            <input type="radio" name="v2" value="true"> Verdadero
+                            <input type="radio" name="v2" value="false"> Falso
+                            <br>
+                            <label>Admiro especialmente a los cantantes</label><br>
+                            <input type="radio" name="v3" value="true"> Verdadero
+                            <input type="radio" name="v3" value="false"> Falso
+                            <br>
+                            <label>Puedo hacer varias tareas al tiempo</label><br>
+                            <input type="radio" name="v4" value="true"> Verdadero
+                            <input type="radio" name="v4" value="false"> Falso
+                            <br>
+                            <label>Cuando voy de viaje me gusta hablar con la gente de la zona</label><br>
+                            <input type="radio" name="v5" value="true"> Verdadero
+                            <input type="radio" name="v5" value="false"> Falso
+                            <br>
+                            <label>Prefiero leer las instrucciones a que alguien me las explique</label><br>
+                            <input type="radio" name="v6" value="true"> Verdadero
+                            <input type="radio" name="v6" value="false"> Falso
+                            <br>
+                            <label>Para encontrar una dirección prefiero preguntar a alguien</label><br>
+                            <input type="radio" name="v7" value="true"> Verdadero
+                            <input type="radio" name="v7" value="false"> Falso
+                            <br>
+
+                            <input type="submit" value="Enviar" class="button" onclick="chAuditivo()" id="btnAuditivo">
+                        </form>
+                    </details>
+                    <br>
+
+                    <details class="attribute"> <!--  Esconde el formulario del estilo kinestesico-->
+                        <summary>
+                            <h4>KINESTÉSICO</h4>
+                        </summary> <!--- Remplaza el texto predeterminado por "kinestesico"-->
+
+                        <form>
+
+                            <label>Prefiero pasar el tiempo haciendo deporte</label><br>
+                            <input type="radio" name="v1" value="true"> Verdadero
+                            <input type="radio" name="v1" value="false"> Falso
+                            <br>
+                            <label>Admiro especialmente a los deportistas</label><br>
+                            <input type="radio" name="v2" value="true"> Verdadero
+                            <input type="radio" name="v2" value="false"> Falso
+                            <br>
+                            <label>Cuando voy de viaje me gusta realizar actividades al aire libre</label><br>
+                            <input type="radio" name="v3" value="true"> Verdadero
+                            <input type="radio" name="v3" value="false"> Falso
+                            <br>
+                            <label>Reviso frecuentemente las anotaciones que tomo durante las clases</label><br>
+                            <input type="radio" name="v4" value="true"> Verdadero
+                            <input type="radio" name="v4" value="false"> Falso
+                            <br>
+                            <label>Necesito recesos frecuentemente cuando estudio</label><br>
+                            <input type="radio" name="v5" value="true"> Verdadero
+                            <input type="radio" name="v5" value="false"> Falso
+                            <br>
+                            <label>Puedo estar mucho tiempo sentado sin realizar ninguna activad</label><br>
+                            <input type="radio" name="v6" value="true"> Verdadero
+                            <input type="radio" name="v6" value="false"> Falso
+                            <br>
+                            <label>Para encontar una dirección me oriento facilmente con la nomenclatura</label><br>
+                            <input type="radio" name="v7" value="true"> Verdadero
+                            <input type="radio" name="v7" value="false"> Falso
+                            <br>
+                            <input type="submit" value="Enviar" class="button" onclick="chKinestesico()" id="btnKinestesico">
+
+                        </form>
+                    </details>
+                    <br>
+                </div>
+                <a type="button" class="button" href="categoria.html" id="btnRegresar">Regresar</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- Contenido -->
+
+    <!-- <footer class="footer">
+        <h1>Todos los derechos reservados © 2020</h1>
+        <nav class="navigationFooter"> -->
+    <!-- navegación del footer/redes sociales -->
+    <!-- <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/dusk/64/000000/facebook-new.png" width="50px"
+                            alt="Facebook"></a>  -->
+    <!-- Enlaces -->
+    <!-- <a href="#"><img src="https://img.icons8.com/dusk/64/000000/instagram-new.png" width="50px"
+                            alt="Instagram" /></a>
+                    <a href="#"><img src="https://img.icons8.com/dusk/64/000000/youtube--v2.png" width="50px"
+                            alt="Youtube" /></a>
+                </li>
+            </ul>
+        </nav>
+    </footer> -->
+
+    <script src="../scripts/trivia2.js"></script> <!-- Archivo de js -->
+
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+html {
+    height: 100%;
+}
+
+body{
+    background-image: url(/icons/fondo.png);
+    font-family: 'Yusei Magic', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+/* --------- Header --------- */
+.header {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.884);
+    display: flex;/* Ayuda a distribuir los items de una interfaz */
+    justify-content: space-around;
+    width: 100%; /* Para que ocupe el 100% de la pantalla */
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 50;
+    color: black;
+    padding-left: 20px; /* Espacio para darle entre el icono y el texto */
+}
+
+.logo{
+    display: flex; /* Para que quede el logo y el texto uno al frente del otro */
+    align-items: center; /* Centrados a nivel vertical --> */
+}
+
+.navegacion ul li{
+    list-style: none; /* Para quitarle el ° de la lista/estilo */
+}
+
+/* --------- Contenido --------- */
+
+h1 {
+    color:blue;
+    display: flex;
+    font-size: 60px;
+    justify-content: center; /* Centrado a nivel horizontal */
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 2px 2px 2px gray; /* Sombreado de la letra */
+}
+
+.container {
+    width: 80%; /* Ocupe el 80% de la página siempre */
+    margin: 0 10%; /* El segundo valor es del 10% para que sumado con el width den un 100% */
+    display: flex;
+    justify-content: center; /* Distribución de los elementos */
+    align-items: center; /* Centrar a nivel vertical */
+    height: 70%;
+}
+
+.form {
+    height: 300px;/* Altura de este "contenedor" */
+    width: 600px;/* Ancho de este "contenedor" */
+    text-align: center; /* Centrar contenido */
+}
+
+.loginName {
+    border-radius: 10px;
+    width: 70%;
+    height: 35px;
+    border: gray 1px solid;
+    font-size: 16px;
+    text-align: center;
+    outline: none; /* Quita linea que aparece al seleccionar el elemento */
+    font-family: 'Yusei Magic', sans-serif;
+    letter-spacing: 1.5px; /* Espacio entre las letras */
+}
+
+/* --------- Estilo de los botones --------- */
+
+.button{
+    border-radius:10px ;
+    width: 30%;
+    height: 35px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    display: inline-block; /* Similar al inline, solo que este respeta el width y el heigh que se le asigne a los elementos. */
+    font-size: 20px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    font-family: 'Yusei Magic', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.form a{ /* Estilos de botón con a */
+    text-decoration: none;
+}
+
+#categoryButton_1 {
+    margin-right: 20px;
+    background-color: #28a1da;
+}
+
+#categoryButton_2 {
+    background-color: #4cce59;
+}
+
+/* --------- Instrucciones --------- */
+.tittle {
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 5px;
+}
+
+.remember {
+    margin-left: 40px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 50;
+}
+
+article h2{
+    margin-bottom: 5px;
+}
+
+/* Check */
+
+.tittleCheck {
+    color: rgb(25, 212, 0);
+}
+
+/* -------------- Trivia 1 -------------- */
+
+/* --------- Container --------- */
+
+.containerTrivia{
+    width: 80%; /* Ocupe el 80% de la página siempre */
+    margin: 0 10%; /* El segundo valor es del 10% para que sumado con el width den un 100% */
+    text-align: center; /* Modifica centrar el botón */
+}
+
+.containerTrivia p{
+    text-align: center;
+    height: 100%;
+}
+
+.containerTrivia1 {
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTrivia2 {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.containerTrivia2 summary {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+summary {
+    width: 300px;
+}
+
+h4 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.containerImagesTrivia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px ;
+}
+
+.containerImagesTrivia img{
+    margin-top: 10px;
+}
+
+.formTrivia1 {
+    text-align: left;
+}
+
+#btnTrivia1:hover {
+    cursor: pointer;
+}
+
+#btnTrivia1 {
+    max-width: 300px;
+    background: #4cce59;
+}
+
+#btnRegresar {
+    max-width: 150px;
+    text-decoration: none;
+}
+
+summary {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+summary h4{
+    display: flex;
+    text-align: center;
+
+}
+
+summary form{
+    text-align: justify;
+}
+
+#btnAuditivo {
+    background: #4cce59;
+}
+
+#btnKinestesico {
+    background: #4cce59;
+}
+
+#btnVisual {
+    background: #4cce59;
+}
+
+#visualCheck{
+  margin-top: 30px
+}
+
+
+/* --------- Footer --------- */
+
+.footer {
+    align-items: center; /* Centrar contenido a nivel vertical */
+    background-color: rgba(255, 255, 255, 0.884);
+    display: flex; /* Ayuda a distribuir los items de una interfaz */
+    justify-content: space-around; /* Posición de los elementos */
+    width: 100%; /* Para que ocupe el 100% de la pantalla de manera horizontal */
+    /* position: absolute; /* Posición fija */ 
+    bottom: 0; /* Posición en la parte de abajo */
+}
+
+.footer h1 {   /* Estilo unicamente al h1 que esta en el footer */
+    font-size: 16px;
+    font-weight: 50;/* Grosor de la letra */
+    color: black;
+}
+
+.navigationFooter a {
+margin: 0 10px; /* Espacio entre los logos */
+}
+
+.navigationFooter ul li{
+    list-style: none; /* Para quitarle el ° de la lista/estilo */
+}
